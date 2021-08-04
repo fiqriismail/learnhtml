@@ -128,6 +128,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 770px) {
+  #topBanner {
+    height: 60vh;
+  }
+
   .banner-text h1 {
     font-size: 2.5em;
   }
@@ -213,4 +217,111 @@ nav ul li a {
 .service-text {
   padding: 0 20px;
   text-align: initial;
+}
+
+@media screen and (max-width: 770px) {
+  .title-text p {
+    font-size: 15px;
+  }
+
+  .title-text h1 {
+    font-size: 25px;
+  }
+
+  .services {
+    flex-basis: 100%;
+  }
+
+  .services-img {
+    flex-basis: 100%;
+  }
+
+  .services-img img {
+    width: 100%;
+  }
+}
+
+/* Product */
+#product {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+
+.product-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.product-item {
+  flex-basis: 48%;
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), white);
+  opacity: 0;
+  transition: 1s;
+}
+
+.product-item:hover .overlay {
+  opacity: 1;
+}
+
+.product-desc {
+  width: 80%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.product-desc h3 {
+  margin-bottom: 10px;
+}
+
+.product-desc p {
+  font-size: 14px;
+}
+
+.product-item:hover .product-desc {
+  opacity: 1;
+  bottom: 40%;
+}
+
+@media screen and (max-width: 770px) {
+  .product-item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .product-desc p {
+    font-size: 12px;
+  }
+
+  .product-item:hover .product-desc {
+    opacity: 1;
+    bottom: 30%;
+  }
 }
