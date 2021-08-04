@@ -381,3 +381,9 @@ nav ul li a {
 .testimonial-col:hover {
   transform: translateY(-20px);
 }
+
+@media screen and (max-width: 770px) {
+  .testimonial-col {
+    flex-basis: 100%;
+  }
+}
