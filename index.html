@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>My Flower Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +23,100 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section id="top-banner">
+    <section id="topBanner">
       <div class="logo">KFlowers</div>
       <div class="banner-text">
         <h1>Kenulis Flower Shop</h1>
         <p>Bloom and be beautiful</p>
+        <div class="banner-btn">
+          <a href="#"
+            ><div></div>
+            Contact</a
+          >
+          <a href="#"
+            ><div></div>
+            Shop</a
+          >
+        </div>
       </div>
     </section>
+    <div id="sideNavigation">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">OUR SHOP</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuButton">
+      <img src="images/menu.png" alt="Main Menu" id="menuIcon" />
+    </div>
+    <section id="service">
+      <div class="title-text">
+        <p>SERVICES</p>
+        <h1>We Offer These Services</h1>
+      </div>
+      <div class="service-box">
+        <div class="services">
+          <h1>Wedding Decorations</h1>
+          <div class="service-desc">
+            <div class="service-icon">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <div class="service-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium iure quae maiores dolorum repellat ea.
+              </p>
+            </div>
+          </div>
+          <h1>Birthday Parties</h1>
+          <div class="service-desc">
+            <div class="service-icon">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="service-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium iure quae maiores dolorum repellat ea.
+              </p>
+            </div>
+          </div>
+          <h1>Bridal Flower Boque</h1>
+          <div class="service-desc">
+            <div class="service-icon">
+              <i class="fas fa-fan"></i>
+            </div>
+            <div class="service-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium iure quae maiores dolorum repellat ea.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="services-img">
+          <img src="images/flower1.jpg" />
+        </div>
+      </div>
+    </section>
+    <script>
+      var btn = document.getElementById("menuButton");
+      var navigation = document.getElementById("sideNavigation");
+      var menuImg = document.getElementById("menuIcon");
+
+      btn.onclick = function () {
+        if (navigation.style.right == "-250px") {
+          navigation.style.right = "0";
+          menuImg.src = "images/cross.png";
+        } else {
+          navigation.style.right = "-250px";
+          menuImg.src = "images/menu.png";
+        }
+      };
+    </script>
   </body>
 </html>

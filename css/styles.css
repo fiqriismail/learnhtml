@@ -7,12 +7,17 @@ ASKFiqri Live Stream - Learning HTML and CSS
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Top banner */
-#top-banner {
-  background: url(/images/banner.jpg);
+#topBanner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #9c6496),
+    url(/images/banner.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
 }
 
 /* Logo */
@@ -34,12 +39,178 @@ ASKFiqri Live Stream - Learning HTML and CSS
 
 .banner-text h1 {
   font-family: "Norican", cursive;
-  color: tomato;
+  color: #c28abc;
   font-size: 4em;
 }
 
 .banner-text p {
   font-family: "Lobster Two", cursive;
-  color: wheat;
+  color: white;
   font-size: 2em;
+}
+
+/* Banner Buttons */
+.banner-btn {
+  margin: 70px auto 0;
+}
+
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: white;
+  border: 0.5px solid #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn a div {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.banner-btn a:hover div {
+  width: 100%;
+}
+
+.banner-btn a:hover {
+  color: black;
+}
+
+/* Side Navigation */
+#sideNavigation {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #e899dc;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#menuButton {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  background: #e899dc;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menuButton img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  .banner-text h1 {
+    font-size: 2.5em;
+  }
+
+  .banner-text p {
+    font-size: 1.4em;
+  }
+
+  .banner-btn a {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* Services */
+#service {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.title-text {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.title-text p {
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c28abc;
+}
+
+.title-text h1 {
+  font-size: 50px;
+}
+
+.service-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.services {
+  flex-basis: 50%;
+}
+
+.services-img {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.services-img img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.services h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: #b279a7;
+}
+
+.service-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.service-icon .fas {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #b279a7;
+  border: 1px solid #9c6496;
+  border-radius: 8px;
+}
+
+.service-text {
+  padding: 0 20px;
+  text-align: initial;
 }
