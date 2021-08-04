@@ -1,1 +1,45 @@
-/* Styles */
+/*
+ASKFiqri Live Stream - Learning HTML and CSS 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top banner */
+#top-banner {
+  background: url(/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.banner-text {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+}
+
+.banner-text h1 {
+  font-family: "Norican", cursive;
+  color: tomato;
+  font-size: 4em;
+}
+
+.banner-text p {
+  font-family: "Lobster Two", cursive;
+  color: wheat;
+  font-size: 2em;
+}
