@@ -14,7 +14,7 @@ body {
 /* Top banner */
 #topBanner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #9c6496),
-    url(/images/banner.jpg);
+    url(../images/banner.jpg);
   background-position: center;
   background-size: cover;
   height: 50vh;
